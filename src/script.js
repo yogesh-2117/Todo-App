@@ -28,7 +28,6 @@ function addTodo(event){
     todoTrash.innerHTML = '<i class="fa-solid fa-trash"></i>'
     todoTrash.classList.add("trash-btn")
     todoDiv.appendChild(todoTrash)
-
     todoList.appendChild(todoDiv)
 
 }
@@ -48,10 +47,9 @@ function deleteCheck(e){
     }
     if (item.classList[0] === "check-btn"){
         const todo = item.parentElement
-        // todo.classList.add("completed")
         todo.classList.toggle("completed")
-        setTimeout(()=>{
-            todo.remove()
-        },1000)
+        // setTimeout(()=>{
+        //     todo.remove()
+        // },1000)
     }
 }
